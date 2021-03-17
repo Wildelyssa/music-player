@@ -1,0 +1,160 @@
+/* color pallette:
+#838191
+#45444D
+#050505
+#1E1E21
+#2E2D33
+#EFF0FB - white
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #45444D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Quicksand', sans-serif;
+    font-size: 12px;
+    color: #EFF0FB;
+}
+
+.player-container {
+    height: 500px;      
+    width: 400px;
+    background: linear-gradient(to bottom, rgb(30, 30, 33), rgb(46, 45, 51), rgb(30, 30, 33));;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.4);
+    border: solid 1.5px #2E2D33;
+}
+  
+.img-container {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+    
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.5);   
+    border: solid 1px #2E2D33;;
+}
+  
+h2 {
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+  
+h3 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    margin: 5px 0 0;
+    letter-spacing: 0.05em;
+}
+  
+  /* Progress */
+.progress-container {
+    background: #3A3940;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px;
+    height: 4px;
+    width: 90%;
+}
+  
+.progress {
+    background: #838191;
+    border-radius: 5px;
+    height: 100%;
+    /* change this to show progress */
+    width: 0%;
+    transition: width 0.1s linear;
+}
+  
+.duration-wrapper {
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+/* Controls */
+.player-controls {
+    position: relative;
+    top: -15px;
+    left: 120px;
+    width: 200px;
+}
+  
+.fas {
+    font-size: 30px;
+    color: #838191;
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fas:hover {
+    /* filter: brightness(60%); */
+    color: #EFF0FB;
+}
+
+.main-button {
+    font-size: 40px;
+    position: relative;
+    top: 3px;
+}
+  
+  /* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+
+    .player-container {
+        width: 95vw;
+    }
+        /* Not Working for the Img */
+
+    .img-container {
+        left: 29px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+    
+    .player-controls {
+        top: -10px;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .player-controls {
+        left: 75px;
+    }
+
+    .img-container {
+        top: -20px;
+        height: 245px;
+        width: 245px;
+    }
+    
+
+}
