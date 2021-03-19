@@ -16,5 +16,5 @@ JS
 * Player controls: play, pause, next, back
 
 ## Improvements
-* Use flexbox and grid to imrpove responsiveness
+* Use flexbox and grid to improve responsiveness
 * Design layout for small landscape screens
